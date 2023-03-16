@@ -8,8 +8,8 @@ app.use(express.static('public'));
 //   res.send('Hello World!')
 // })
 
-app.get('/', function(req, res){
-    const filePath = path.join(__dirname, 'views', 'index.html')
+app.get('/newpage', function(req, res){
+    const filePath = path.join(__dirname, 'views', 'hellopage.html')
     res.sendFile(filePath);
 });
 
